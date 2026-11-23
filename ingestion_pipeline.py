@@ -75,7 +75,7 @@ def create_vector_store(chunks, persist_directory='db/chromadb'):
         documents=chunks,
         embedding=embedding_model,
         persist_directory=persist_directory,
-        collection_metada={"hsnw:space": "cosine"}
+        collection_metadata={"hsnw:space": "cosine"}
     )
     print("--- Finished creating vector store")
 
